@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Clearance System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Student Clearance Portal</h1>
+    <p>Samuel Lumumba Sports | Mobile-Friendly Clearance System</p>
+  </header>
+
+  <section id="login">
+    <h2>Login</h2>
+    <input type="text" id="studentId" placeholder="Enter Student ID" />
+    <button onclick="login()">Login</button>
+    <p id="loginStatus"></p>
+  </section>
+
+  <section id="clearance" style="display:none;">
+    <h2>Clearance Workflow</h2>
+    <div id="departments"></div>
+    <button onclick="generateCertificate()">Generate Clearance Certificate</button>
+  </section>
+
+  <section id="certificate" style="display:none;">
+    <h2>Clearance Certificate</h2>
+    <div id="certificateContent"></div>
+    <button onclick="window.print()">Print PDF</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
